@@ -1,0 +1,103 @@
+/*------------- google font---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* -----------------------------
+universal selector
+------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------------------
+ common section
+ -------------------------- */
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+.full-page
+{
+    height: 100vh;
+    width: 100vw;
+}
+.container
+{
+    height: 680px;
+    width: 1350px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+/*---------------------------
+ header section start 
+ --------------------------*/
+ .header-element
+ {
+    display: flex;
+    justify-content: space-around;
+    background-color: #161616;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+
+ }
+ .header-element div
+ {
+    width: 50%;
+ }
+ .header-info
+ {
+    color: #fff;
+    padding: 70px 50px  50px 100px;
+ }
+ .header-info h1
+ {
+    font-size: 4em;
+    margin-bottom: 30px;
+ }
+ .header-info p
+ {
+    margin-bottom: 30px;
+ }
+ .header-info button
+ {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #db0000;
+    border: none;
+    margin-top: 20px;
+    
+ }
+ .header-info button a
+ {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+ }
+
+ .header-info button .fa-angle-right
+ {
+    margin-left: 10px;
+ }
+ .header-element .header-image img
+ {
+    height: 600px;
+ }
+ /*---------------------------
+ header section end 
+ --------------------------*/
+ /*---------------------------
+ blog section start 
+ --------------------------*/
+
+
+
+
+
+
+
+  /*---------------------------
+ blog section end 
+ --------------------------*/
