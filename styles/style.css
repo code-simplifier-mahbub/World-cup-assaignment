@@ -23,10 +23,10 @@ body
 }
 .container
 {
-    height: 680px;
     width: 1350px;
     margin: 0 auto;
     margin-top: 50px;
+
     
 }
 /*---------------------------
@@ -45,6 +45,7 @@ body
  .header-element div
  {
     width: 50%;
+    height: 100%;
  }
  .header-info
  {
@@ -77,27 +78,193 @@ body
     font-size: 20px;
  }
 
+ .header-info button:hover
+ {
+   background-color: transparent;
+   border: 2px solid #ff0000;
+   transition: .2s ease-in;
+ }
+ .header-info button:hover a
+ {
+   color: #ff0000;
+   transition: .2s ease-in;
+ }
+
  .header-info button .fa-angle-right
  {
     margin-left: 10px;
  }
+ .header-element .header-image
+ {
+    height: 100%;
+ }
  .header-element .header-image img
  {
-    height: 600px;
- }
+  width: 550px;
+  margin-top: 60px;
+}
  /*---------------------------
  header section end 
  --------------------------*/
  /*---------------------------
  blog section start 
  --------------------------*/
+ article .container
+ {
+   margin-top: 100px;
+ }
+.blog-element
+{
+   display: flex;
+}
+.blog-element aside
+{
+   background-color: #161616;
+   height: 320px;
+   width: 315px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 10px;
+   margin-right: 30px;
+}
+.blog-element aside button
+{
+   background-color: rgb(241, 241, 241);
+   border-radius: 10px;
+   width: 240px;
+   margin: 15px 0;
+}
 
+.blog-element aside button a
+{
+   text-decoration: none;
+   font-size: 20px;
+   color: #000;
+   padding: 18px 35px;
+   display: inline-block;
+}
+.blog-element aside button:nth-child(3)
+{
+   background-color: #db0000;
+}
+.blog-element aside button:nth-child(3) a
+{
+   color: #fff;
+}
 
-
-
-
+.blog-element .blogs
+{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 30px;
+}
+.blog-element .blogs .blog
+{
+   width: 315px;
+   box-shadow: 0px 0px 2px #585858;
+   border-radius: 10px;
+}
+.blog-element .blogs .blog .image img
+{
+   width: 100%;
+}
+.blog-element .blogs .blog .blog-info
+{
+   padding: 15px;
+}
+.blog-element .blogs .blog .blog-info button
+{
+   padding: 5px 15px;
+   margin-bottom: 15px;
+   font-size: 18px;
+}
+.blog-element .blogs .blog .blog-info h4
+{
+   margin-bottom: 15px;
+}
+.blog-info .schedule-message
+{
+   display: flex;
+}
+.schedule-message .fa-clock
+{
+   margin-right: 10px;
+}
+.schedule-message .fa-message
+{
+   margin-right: 10px;
+}
+.blog-info .schedule-message .schedule
+{
+   margin-right:30px;
+}
 
 
   /*---------------------------
  blog section end 
  --------------------------*/
+   /*---------------------------
+ footerr section start
+ --------------------------*/
+footer
+{
+   width: 100%;
+   height: 500px;
+   background-color: #161616;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+footer h2
+{
+   font-size: 3em;
+   font-weight: 500;
+   color: #fff;
+}
+footer hr
+{
+   width: 1200px;
+   margin: 30px;
+   margin-bottom: 35px;
+}
+footer a
+{
+   text-decoration: none;
+   color: rgb(197, 197, 197);
+   margin: 0 20px;
+}
+footer .footer-icon
+{
+   margin-top: 30px;
+}
+footer .footer-icon span
+{
+   margin: 0 20px;
+   color: #fff;
+   font-size: 30px;
+}
+footer .footer-icon span:hover a
+{
+   
+   color: #a3a3a3;
+   
+}
+
+
+   /*---------------------------
+ footerr section end 
+ --------------------------*/
+
+ /* responsive for mobile start */
+ @media only screen and(max-width:580px) {
+   
+ }
+ /* responsive for mobile end */
+
+
+ /* responsive for tablet start */
+ /* responsive for tablet end */
