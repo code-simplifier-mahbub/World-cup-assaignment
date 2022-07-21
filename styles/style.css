@@ -23,11 +23,9 @@ body
 }
 .container
 {
-    width: 1350px;
+    width: 90%;
     margin: 0 auto;
-    margin-top: 50px;
-
-    
+    margin-top: 50px;   
 }
 /*---------------------------
  header section start 
@@ -40,7 +38,6 @@ body
     height: 100%;
     width: 100%;
     border-radius: 30px;
-
  }
  .header-element div
  {
@@ -260,11 +257,278 @@ footer .footer-icon span:hover a
  --------------------------*/
 
  /* responsive for mobile start */
- @media only screen and(max-width:580px) {
-   
+ @media only screen and (max-width: 767px) {
+   .full-page
+   {
+       height: 100%;
+       width: 100%;
+   }
+
+   .container
+{
+    width: 100%;
+    margin: 0 auto;
+}
+.header-element
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 15px;
+}
+.header-element div
+ {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
  }
+ .header-info
+ {
+    color: #fff;
+    padding: 20px;
+ }
+ .header-info h1
+ {
+    font-size: 2em;
+    margin-bottom: 30px;
+ }
+ .header-element .header-image
+ {
+    height: 100%;
+ }
+ .header-element .header-image img
+ {
+  width: 250px;
+  margin-top: 0px;
+}
+ /*---------------------------
+ blog section responsive start 
+ --------------------------*/
+ article .container
+ {
+   margin-top: 0px;
+ }
+.blog-element
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.blog-element aside
+{
+   background-color: transparent;
+   height: 320px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-right: 0;
+   margin-top: 0px;
+}
+.blog-element aside button
+{
+   background-color: transparent;
+   border: 2px solid #58585881;
+   border-radius: 10px;
+   margin: 15px 0;
+}
+
+.blog-element aside button a
+{
+   text-decoration: none;
+   font-size: 20px;
+   color: rgb(99, 99, 99);
+   padding: 18px 35px;
+   display: inline-block;
+}
+.blog-element .blogs
+{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-gap: 30px;
+}
+
+  /*---------------------------
+ blog section end 
+ --------------------------*/
+ /* footerr section start */
+
+footer
+{
+   margin-top: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+footer .footer-info
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+footer h2
+{
+   font-size: 1.5em;
+   margin-bottom: 0px;
+}
+footer hr
+{
+   width: 80%;
+   margin: 30px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+   background-color: #58585841;
+}
+footer .footer-info a
+{
+   margin: 10px 0;
+}
+footer a
+{
+   text-decoration: none;
+   color: rgb(197, 197, 197);
+}
+footer .footer-icon
+{
+   margin-top: 10px;
+}
+footer .footer-icon span
+{
+   margin: 0 5px;
+   font-size: 25px;
+}
+ }
+   /*---------------------------
+ footerr section end 
+ --------------------------*/  
+
  /* responsive for mobile end */
 
 
  /* responsive for tablet start */
+ @media only screen and (min-width: 768px) and (max-width: 1023px){
+   .container {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  .header-info h1
+  {
+     font-size: 2.5em;
+     margin-bottom: 10px;
+  }
+  .header-element .header-image
+  {
+     height: 100%;
+  }
+  .header-element .header-image img
+  {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   width: 400px;
+   margin-top: 195px;
+ }
+ /*---------------------------
+ blog section responsive start 
+ --------------------------*/
+ article .container
+ {
+   margin-top: 0px;
+ }
+.blog-element
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.blog-element aside
+{
+   background-color: transparent;
+   height: 320px;
+   width: 100%;
+   flex-direction: row;
+   margin-right: 0;
+   margin-top: 0px;
+}
+.blog-element aside button
+{
+   background-color: transparent;
+   width: 300px;
+   border: none;
+   border-radius: 10px;
+   margin: 15px 0;
+}
+
+.blog-element aside button a
+{
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: 700;
+   color: rgb(15, 15, 15);
+   padding: 25px 35px;
+   display: inline-block;
+}
+.blog-element .blogs
+{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 30px;
+}
+.blog-element .blogs .blog
+{
+   width: 400px;
+}
+
+  /*---------------------------
+ blog section end 
+ --------------------------*/
+ footer
+ {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ footer .footer-info
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ footer h2
+ {
+    font-size: 3em;
+ }
+ footer hr
+ {
+    width: 80%;
+    margin: 30px;
+    margin-bottom: 30px;
+    background-color: #58585841;
+ }
+ footer .footer-info a
+ {
+    margin: 10px;
+ }
+ footer .footer-icon
+ {
+    margin-top: 20px;
+ }
+  }
+    /*---------------------------
+  footerr section end 
+  --------------------------*/  
+
  /* responsive for tablet end */
